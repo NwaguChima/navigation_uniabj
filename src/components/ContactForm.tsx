@@ -2,6 +2,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ContactRequest, ContactValidator } from "@/lib/validators/contact";
+import { Label } from "./ui/Label";
 
 interface ContactFormProps {}
 
@@ -23,7 +24,9 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
     <div className="mt-10 rounded-lg border p-5">
       <form onSubmit={handleSubmit((data) => console.log(data))}>
         <div className="flex flex-col">
-          <label htmlFor="name">Name</label>
+          <Label htmlFor="name" className="sr-only">
+            Name
+          </Label>
           <input
             type="text"
             id="name"
