@@ -3,6 +3,9 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ContactRequest, ContactValidator } from "@/lib/validators/contact";
 import { Label } from "./ui/Label";
+import { Input } from "./ui/Input";
+import { Button } from "./ui/Button";
+import { Textarea } from "./ui/Textarea";
 
 interface ContactFormProps {}
 
@@ -22,47 +25,57 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
 
   return (
     <div className="mt-10 rounded-lg border p-5">
-      <form onSubmit={handleSubmit((data) => console.log(data))}>
+      <form
+        onSubmit={handleSubmit((data) => console.log(data))}
+        className="flex flex-col gap-4"
+      >
         <div className="flex flex-col">
-          <Label htmlFor="name" className="sr-only">
+          <Label htmlFor="name" className="mb-2">
             Name
           </Label>
-          <input
-            type="text"
+          <Input
             id="name"
+            className="pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+            size={32}
             {...register("name")}
-            className="rounded-lg border p-2"
           />
-          {errors.name && <span>{errors.name.message}</span>}
+          {errors.name && (
+            <p className="p-1 text-xs text-red-600">{errors.name.message}</p>
+          )}
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="email">Email</label>
-          <input
-            type="text"
+          <Label htmlFor="email" className="mb-2">
+            Email Address
+          </Label>
+          <Input
             id="email"
+            className="pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+            size={32}
             {...register("email")}
-            className="rounded-lg border p-2"
           />
-          {errors.email && <span>{errors.email.message}</span>}
+          {errors.email && (
+            <p className="p-1 text-xs text-red-600">{errors.email.message}</p>
+          )}
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="message">Message</label>
-          <textarea
+          <Label htmlFor="message" className="mb-2">
+            Message
+          </Label>
+          <Textarea
             id="message"
+            className="pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
             {...register("message")}
-            className="rounded-lg border p-2"
           />
-          {errors.message && <span>{errors.message.message}</span>}
+          {errors.message && (
+            <p className="p-1 text-xs text-red-600">{errors.message.message}</p>
+          )}
         </div>
 
-        <button
-          type="submit"
-          className="mt-5 rounded-lg bg-blue-500 p-2 text-white"
-        >
+        <Button className="mt-4 bg-green-500 transition-all duration-300 hover:bg-green-600">
           Submit
-        </button>
+        </Button>
       </form>
     </div>
   );
