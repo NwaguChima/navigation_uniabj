@@ -6,6 +6,7 @@ import {
   GoogleMap,
   useLoadScript,
   Marker,
+  MarkerF,
   InfoWindow,
 } from "@react-google-maps/api";
 import { ThreeCircles } from "react-loader-spinner";
