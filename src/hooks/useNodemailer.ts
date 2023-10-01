@@ -20,10 +20,10 @@ const useNodemailer = () => {
   async function sendMail({ from, to, subject, text }: MailOptions) {
     try {
       await transporter.sendMail({
-        from: "",
-        to: "",
-        subject: "",
-        text: "",
+        from,
+        to,
+        subject,
+        text,
       });
 
       toast({

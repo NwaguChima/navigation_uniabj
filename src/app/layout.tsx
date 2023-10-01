@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import Providers from "@/components/Providers";
 import { Toaster } from "@/components/ui/Toaster";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,8 @@ export default function RootLayout({
           <div className="container mx-auto h-full max-w-7xl pt-12">
             {children}
           </div>
+
+          <Footer />
 
           <Toaster />
         </Providers>
