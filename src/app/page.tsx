@@ -3,7 +3,7 @@ import vcImage from "../../public/vice_chancellor.jpeg";
 
 export default function Home() {
   return (
-    <main className="mb-24 p-2 pt-12 md:p-6 md:pt-12">
+    <main className="mb-28 p-2 pt-12 md:p-6 md:pt-12">
       <h1 className="text-2xl font-bold md:text-3xl">Welcome to our school</h1>
       <div className="mt-8">
         <figure>
