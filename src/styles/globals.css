@@ -74,3 +74,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+.homepage {
+  background-image: url(../../public/uniabj_banner.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(182, 218, 177, 0.1) 0%,
+      rgba(109, 222, 109, 0.6) 35%,
+      rgba(5, 239, 40, 0.5) 100%
+    );
+  }
+}

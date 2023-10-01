@@ -2,7 +2,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <section className="">
+    <section className="p-2 pt-12 md:p-6 md:pt-12">
       <h1 className="text-2xl font-bold md:text-3xl">About Us</h1>
       <div className="mt-4 h-[80vh] overflow-y-scroll pb-28 pr-2">
         <p className="justify-center leading-7">

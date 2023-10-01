@@ -3,7 +3,7 @@ import vcImage from "../../public/vice_chancellor.jpeg";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="homepage p-2 pt-12 md:p-6 md:pt-12">
       <h1 className="text-2xl font-bold md:text-3xl">Welcome to our school</h1>
       <div className="mt-8">
         <figure>
@@ -12,7 +12,7 @@ export default function Home() {
             Vice Chancellor
           </figcaption>
         </figure>
-        <p className="mt-4 leading-7">
+        <p className="mt-4 font-semibold leading-7">
           Explore our campus and find your way around with our interactive map.
           Whether you&apos;re a student, parent, or visitor, this map will help
           you navigate our school easily and efficiently. Discover classrooms,
