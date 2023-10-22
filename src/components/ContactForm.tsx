@@ -24,18 +24,18 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
   });
 
   return (
-    <div className="mt-10 rounded-lg border p-5">
+    <div className="formGradient mb-28 mt-10 max-w-xl rounded-lg border p-5">
       <form
         onSubmit={handleSubmit((data) => console.log(data))}
         className="flex flex-col gap-4"
       >
         <div className="flex flex-col">
-          <Label htmlFor="name" className="mb-2">
+          <Label htmlFor="name" className="mb-2 font-semibold">
             Name
           </Label>
           <Input
             id="name"
-            className="pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+            className="bg-transparent pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
             size={32}
             {...register("name")}
           />
@@ -45,12 +45,12 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
         </div>
 
         <div className="flex flex-col">
-          <Label htmlFor="email" className="mb-2">
+          <Label htmlFor="email" className="mb-2 font-semibold">
             Email Address
           </Label>
           <Input
             id="email"
-            className="pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+            className="bg-transparent pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
             size={32}
             {...register("email")}
           />
@@ -60,12 +60,12 @@ const ContactForm: React.FC<ContactFormProps> = ({}) => {
         </div>
 
         <div className="flex flex-col">
-          <Label htmlFor="message" className="mb-2">
+          <Label htmlFor="message" className="mb-2 font-semibold">
             Message
           </Label>
           <Textarea
             id="message"
-            className="pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+            className="bg-transparent pl-2 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
             {...register("message")}
           />
           {errors.message && (

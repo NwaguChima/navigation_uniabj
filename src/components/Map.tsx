@@ -40,7 +40,7 @@ const Map: React.FC<MapProps> = ({}) => {
   if (loadError) return <div>Error loading maps</div>;
 
   return (
-    <div className="mt-6 h-[70vh] overflow-hidden rounded-sm border bg-zinc-100">
+    <div className="mt-4 h-[72vh] overflow-hidden rounded-sm border bg-zinc-100">
       <GoogleMap
         mapContainerStyle={{ width: "100%", height: "100%" }}
         zoom={15}

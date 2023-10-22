@@ -76,27 +76,65 @@
 }
 
 .homepage {
-  background-image: url(../../public/uniabj_banner.jpeg);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgb(2, 75, 13, 0.4) 100%
+    ),
+    url(../assets/photo3.jpeg);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    /* add a subtle linear gradient going from top to bottom */
-    background: linear-gradient(
+.aboutPage {
+  background: linear-gradient(
       180deg,
-      rgb(2, 75, 13, 0.1) 0%,
-      rgb(2, 75, 13, 0.4) 35%,
-      rgb(2, 75, 13, 0.8) 100%
-    );
-  }
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(13, 16, 14, 0.5) 100%
+    ),
+    url(../assets/photo1.jpeg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.contactUs {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 100%,
+      rgba(13, 16, 14, 0.7) 0%
+    ),
+    url(../assets/photo16.jpeg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.mapPage {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 100%,
+      rgba(13, 16, 14, 0.7) 0%
+    ),
+    url(../assets/photo17.jpeg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.formGradient {
+  background: rgb(112, 128, 143, 0.7);
 }

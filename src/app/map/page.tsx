@@ -3,7 +3,7 @@ import React from "react";
 
 const Page = ({}) => {
   return (
-    <section className="mb-28 p-2 pt-12 md:p-6 md:pt-12">
+    <section className="mapPage mb-28 p-2 pt-10 md:p-6 md:pt-4">
       <h1 className="text-2xl font-bold md:text-3xl">Map</h1>
 
       <div>

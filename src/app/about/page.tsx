@@ -2,10 +2,10 @@ import React from "react";
 
 const Page = () => {
   return (
-    <section className="p-2 pt-12 md:p-6 md:pt-12">
-      <h1 className="text-2xl font-bold md:text-3xl">About Us</h1>
+    <section className="aboutPage p-2 pt-12 md:p-6 md:pt-12">
+      <h1 className="text-2xl font-bold text-zinc-300 md:text-4xl">About Us</h1>
       <div className="mt-4 h-[80vh] overflow-y-scroll pb-28 pr-2">
-        <p className="justify-center leading-7">
+        <p className="justify-center text-lg leading-7 text-zinc-300">
           The University of Abuja, commonly known as UniAbuja, is a federal
           university located in the Nigerian capital city of Abuja. Established
           on January 1, 1988, it is one of the youngest universities in Nigeria.
@@ -38,7 +38,7 @@ const Page = () => {
           who are equipped with the knowledge and skills needed to address
           societal challenges.
         </p>
-        <p>
+        <p className="justify-center text-lg leading-7 text-zinc-300">
           Originally, the university had two campuses: the mini-campus located
           in Gwagwalada, Abuja, and the permanent site situated along Airport
           Road, Abuja. The mini-campus served as the main campus until the
@@ -49,7 +49,7 @@ const Page = () => {
           university community. Some of the prominent buildings on the main
           campus of the University of Abuja include:
         </p>
-        <ul className="ml-4 mt-2 flex flex-col gap-4">
+        <ul className="ml-4 mt-2 flex flex-col gap-4 text-zinc-300">
           <li>
             1. Senate Building: It is the administrative hub and houses the
             Office of the Vice-Chancellor and other key administrative offices.

@@ -3,16 +3,24 @@ import vcImage from "../../public/vice_chancellor.jpeg";
 
 export default function Home() {
   return (
-    <main className="mb-28 p-2 pt-12 md:p-6 md:pt-12">
-      <h1 className="text-2xl font-bold md:text-3xl">Welcome to our school</h1>
+    <main className="homepage mb-20 min-h-[90vh] p-4 pt-12 md:mb-32 md:p-6 md:pt-12">
+      <h1 className="text-2xl font-bold md:text-4xl">
+        Welcome to University Of Abuja
+      </h1>
       <div className="mt-8">
         <figure>
-          <Image src={vcImage} width={100} height={100} alt="vice chancellor" />
-          <figcaption className="text-sm text-gray-500">
+          <Image
+            src={vcImage}
+            width={100}
+            height={100}
+            alt="vice chancellor"
+            className="rounded-md"
+          />
+          <figcaption className="text-sm text-white">
             Vice Chancellor
           </figcaption>
         </figure>
-        <p className="mt-4 font-semibold leading-7">
+        <p className="mt-4 py-4 text-base leading-7 md:text-xl md:font-semibold">
           Explore our campus and find your way around with our interactive map.
           Whether you&apos;re a student, parent, or visitor, this map will help
           you navigate our school easily and efficiently. Discover classrooms,
