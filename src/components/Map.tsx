@@ -18,7 +18,7 @@ const Map: React.FC<MapProps> = ({}) => {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
   });
 
-  const center = useMemo(() => ({ lat: 8.9807, lng: 7.1805 }), []);
+  const center = useMemo(() => ({ lat: 8.980466, lng: 7.183379 }), []);
 
   if (!isLoaded)
     return (
@@ -43,7 +43,7 @@ const Map: React.FC<MapProps> = ({}) => {
     <div className="mt-6 h-[70vh] overflow-hidden rounded-sm border bg-zinc-100">
       <GoogleMap
         mapContainerStyle={{ width: "100%", height: "100%" }}
-        zoom={10}
+        zoom={15}
         center={center}
       >
         <Marker position={center} />
