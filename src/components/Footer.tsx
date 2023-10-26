@@ -1,10 +1,5 @@
 import { cn } from "@/lib/utils";
-import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  TwitterIcon,
-} from "lucide-react";
+import { FacebookIcon, InstagramIcon, LinkedinIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -30,10 +25,34 @@ const Footer: React.FC<FooterProps> = ({}) => {
 
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <FacebookIcon className="w-5 text-gray-100" />
-          <TwitterIcon className="w-5 text-gray-100" />
-          <LinkedinIcon className="w-5 text-gray-100" />
-          <InstagramIcon className="w-5 text-gray-100" />
+          <a
+            href="https://www.facebook.com/ekene.nwankwo.79656?mibextid=ZbWKwL"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FacebookIcon className="w-5 text-gray-100" />
+          </a>
+          <a
+            href="https://x.com/ThisEmmawell?t=bvIf805Pa9UUluLUtK0KqQ&s=08"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <XIcon className="w-5 text-gray-100" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emmanuel-nwankwo-64596724a"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedinIcon className="w-5 text-gray-100" />
+          </a>
+          <a
+            href="https://instagram.com/ekenziemonie?igshid=ZGUzMzM3NWJiOQ=="
+            target="_blank"
+            rel="noreferrer"
+          >
+            <InstagramIcon className="w-5 text-gray-100" />
+          </a>
         </div>
         <p className="text-center text-gray-100">
           &copy; {new Date().getFullYear()} University of Abuja
